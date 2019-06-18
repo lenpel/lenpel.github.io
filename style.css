@@ -83,7 +83,7 @@ h2, a:hover{
 .cta-button:hover{
   background: var(--white-text);
   border-color: var(--white-text);
-} 
+}
 
 .caption h1, h2.border {
 	background-color: transparent;
@@ -104,7 +104,7 @@ h2, a:hover{
 }
 
 h1, h2{
-    font-weight: 700 !important; 
+    font-weight: 700 !important;
 }
 
 html{
@@ -136,12 +136,12 @@ html{
   background-image: url("https://res.cloudinary.com/cloudlenpel/image/upload/c_scale,w_2500/v1558343713/notebook_1_upak3q.jpg");
 /*   background-image: url("https://res.cloudinary.com/cloudlenpel/image/upload/c_scale,w_2000/v1558558161/tulip_2_ktsebp.jpg"); */
 /*   background-image: url("https://res.cloudinary.com/cloudlenpel/image/upload/c_scale,w_2500/v1558965137/portfolio/icons8-team-643494-unsplash_1.jpg"); */
-  
+
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 	
+  background-size: cover;
   position: relative;
 }
 
@@ -156,12 +156,12 @@ html{
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  width: 80%; 
+  width: 80%;
 }
 
-.body{ 
+.body{
 	width: 80%;
-  position: relative; 
+  position: relative;
 }
 
 .anchor {
@@ -172,11 +172,11 @@ html{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+
   align-items: center;
   min-height: 100vh;
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
 }
 
 .project-tile {
@@ -184,7 +184,7 @@ html{
   perspective: 1000px;
   -webkit-perspective: 1000px;
   overflow: hidden;
-  
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -332,9 +332,8 @@ form#contactform {
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
-    margin: 2rem auto;
     background: var(--light-grey);
-/*     height: 100vh; */
+    min-height: 100vh;
 }
 
 #Name, #Email, .message {
@@ -410,7 +409,7 @@ textarea {
   75% {margin-top:0px;}
     99.99% {margin-top:0px;}
   100% {margin-top:-270px;}
-  
+
 }
 .caption h2{
   color: var(--white-text) !important;
@@ -464,42 +463,42 @@ textarea {
 
 @media (min-width: 900px) {
 /* big screen */
-  
-  .body{ 
+
+  .body{
     width: 85%;
     margin: 2.85rem 2rem;
-    position: relative; 
+    position: relative;
   }
-  
+
   .project-tile {
     margin: 3.85rem 4rem 6rem;
     max-width: 40%;
   }
-  
+
   .caption h1, h2.border, .about-info {
 	  width: 80%;
     max-width: 900px;
-  }  
+  }
 }
 
 @media (max-width: 899px) {
 /* small screen */
-  .body{ 
+  .body{
     width: 100%;
     margin: 2.85rem 2rem;
-    position: relative; 
+    position: relative;
   }
-  
+
   .project-tile {
     margin: 3.85rem 3rem 6rem;
 /*     max-width: 90%; */
   }
-  
+
   .caption h1, h2.border, .about-info, #contactform {
 	  width: 90%;
     max-width: 760px;
   }
-  
+
   .caption h1{
     font-size: 3.6rem;
     letter-spacing: 0.35rem;
