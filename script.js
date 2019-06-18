@@ -10,13 +10,6 @@ $(function () {
   });
 });
 
-// fly in animation
-$(function () {
-  setTimeout(function () {
-    $(".fly-in-text").removeClass('hidden');
-  }, 800);
-})();
-
 // adding smooth scrolling - as it is not supported by Safari
 
 $(document).ready(function(){
