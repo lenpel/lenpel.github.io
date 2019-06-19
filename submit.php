@@ -22,7 +22,6 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
 	// finally, send the message
 	mail($youremail, 'Contact Form', $body, $headers );
-
 }
 
 // otherwise, let the spammer think that they got their message through
@@ -30,9 +29,9 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 // uncomment these lines to redirect instead of displaying HTML
 //header('Location: http://www.mysite.com/thankyou.html');
 //exit('Redirecting you to http://www.mysite.com/thankyou.html');
-
+echo 'Thank you!';
 ?>
-<!DOCTYPE HTML>
+<!-- <!DOCTYPE HTML>
 <html lang="en">
 <head>
     <title>Thanks!</title>
@@ -44,4 +43,4 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 <p>We'll get back to you as soon as possible.</p>
 
 </body>
-</html>
+</html> -->
