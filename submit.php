@@ -33,11 +33,10 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
 ?>
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
-
-<title>Thanks!</title>
-
+    <title>Thanks!</title>
+    <meta charset="utf-8">
 </head>
 <body>
 
