@@ -190,9 +190,9 @@ html{
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 4px 4px rgba(0,0,0,0.2);
-  margin: 3.85rem 0 6rem;
+  margin: 3.85rem 3rem 6rem;
 /*   width: 50%; */
-  max-width: 768px;
+  max-width: 600px; /* 768 */
 }
 
 .project-tile-front {
@@ -323,12 +323,12 @@ html{
 
 form#contactform {
     position: relative;
-    margin: 4rem auto;
-    width: 500px;
+    margin: 4rem 1rem;
+    max-width: 500px;
     background-color: transparent;
 }
 
-.contact {
+section.contact {
     text-align: center;
     font-size: 2.2rem;
     font-weight: bold;
@@ -413,6 +413,7 @@ textarea {
 }
 .caption h2{
   color: var(--white-text) !important;
+  margin-top: 3rem;
 }
 
 /* heartbeat animation */
@@ -461,6 +462,10 @@ textarea {
     }
   }
 
+.antispam {
+  display:none;
+}
+
 @media (min-width: 900px) {
 /* big screen */
 
@@ -471,8 +476,8 @@ textarea {
   }
 
   .project-tile {
-    margin: 3.85rem 4rem 6rem;
-    max-width: 40%;
+    /* margin: 3.85rem 4rem 6rem; */
+    /* max-width: 40%; */
   }
 
   .caption h1, h2.border, .about-info {
@@ -490,13 +495,13 @@ textarea {
   }
 
   .project-tile {
-    margin: 3.85rem 3rem 6rem;
+    margin: 3.85rem 0;
 /*     max-width: 90%; */
   }
 
-  .caption h1, h2.border, .about-info, #contactform {
+  .caption h1, h2.border, .about-info {
 	  width: 90%;
-    max-width: 760px;
+    max-width: 600px;
   }
 
   .caption h1{
@@ -506,7 +511,6 @@ textarea {
 
   .caption h2 {
     font-size: 1.8rem;
-    margin-top: 20px; /*size of the heart */
   }
 
   .about{
