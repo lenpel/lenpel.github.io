@@ -42,7 +42,7 @@ h1, h2, .project-tile-title{ /* heading */
 }
 
 h2.center {
-  font-size: 3.85rem !important;
+  font-size: 3.6rem !important;
 }
 
 h2, a:hover{
@@ -119,7 +119,7 @@ html{
 
 #nav-bar{
   font-size: 2rem;
-  background-color: var(--black-background);
+  background-color: black;
   color: var(--white-text);
   font-weight: 900;
   /* border-color: var(--black-background); */
@@ -130,6 +130,11 @@ html{
   -webkit-transition: background-color 600ms linear;
   -ms-transition: background-color 600ms linear;
   transition: background-color 600ms linear;
+}
+
+.navbar{
+  border: 0px solid white !important;
+  box-shadow: 0 0px 1px 1px rgba(0,0,0,0.2);
 }
 
 .img-container {
@@ -209,7 +214,6 @@ html{
 
   height: 100%;
   overflow: auto;
-  padding: 20px;
   background: var(--light-grey);
   position: absolute;
   top: 0;
@@ -232,14 +236,16 @@ html{
 }
 
 .project-tile-title {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   font-weight: bold;
   margin: 2rem auto;
 }
 
 .project-tile-back p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: left;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .tech-stack{
@@ -323,9 +329,10 @@ html{
 
 form#contactform {
     position: relative;
-    margin: 4rem 1rem;
+    margin: 4rem auto;
     max-width: 500px;
     background-color: transparent;
+    padding: 1rem;
 }
 
 section.contact {
@@ -470,7 +477,7 @@ textarea {
 /* big screen */
 
   .body{
-    width: 85%;
+    width: 100%;
     margin: 2.85rem 2rem;
     position: relative;
   }

@@ -261,9 +261,9 @@ Either search an article or request a random article. Uses Wiki API.</p>
   <!-- Contact-->
   <section class="contact">
     <div class="anchor" id="contact"></div>
-    <h2 class="center">- Drop me a line -</h2>
+    <h2 class="center">Drop me a line</h2>
     <div class="contact">
-      <form  id="contactform" method="post" action="https://formspree.io/lba_2@yahoo.com" novalidate="novalidate">
+      <form  id="contactform" method="post" novalidate="novalidate">
         <fieldset>
           <input name="name" type="text" id="Name" value="" autocomplete="off" placeholder="Name *" />
           <input name="_replyto" type="email" id="Email" value="" placeholder="Email *" />
@@ -273,7 +273,14 @@ Either search an article or request a random article. Uses Wiki API.</p>
           <input type="submit" class="cta-button submit-button" name="submitform" value="Send message" tabindex="300">
         </fieldset>
       </form>
+      <script>
+        var contactform =  document.getElementById('contactform');
+        contactform.setAttribute('action', '//forms' + 'pree.io/' + 'lenp' + 'el.te' + 'ch@gm' + 'ail.' + 'com');
+      </script>
 
+
+    </div>
+    <footer>
       <div class="contact-buttons">
         <div class="container-fluid center">
           <button class="btn btn-mypink">
@@ -305,8 +312,9 @@ Either search an article or request a random article. Uses Wiki API.</p>
           </button>
         </div>
       </div>
-    </div>
+    </footer>
   </section>
+
 </body>
 
 
