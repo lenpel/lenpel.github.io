@@ -16,7 +16,7 @@ var message = "";
 $("#sendMessage").on("click", function() {
     message = $("#contactform").serialize();
     $.ajax({
-        url: "//formspree.io/dynamicrealities@gmail.com", 
+        url: "//formspree.io/dynamicrealities@gmail.com",
         method: "POST",
         data: {message: message},
         dataType: "json"
@@ -26,7 +26,6 @@ $("#sendMessage").on("click", function() {
 });
 
 // adding smooth scrolling - as it is not supported by Safari
-
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -50,6 +49,22 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  // ===== Scroll to Top ====
+  $(window).scroll(function() {
+    if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
+        $('#scroll-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#scroll-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#scroll-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+    return false;
+  });
+
 });
 
 // End of adding smooth scrolling - as it is not supported by Safari
