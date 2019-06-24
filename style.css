@@ -100,7 +100,7 @@ h2, a:hover{
 }
 
 .caption h2 {
-	font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h1, h2{
@@ -429,7 +429,7 @@ textarea {
     margin: auto;
     top: 10px;
     right: 0;
-    bottom: 10px;
+    bottom: 15px;
     left: 0;
     background-color: var(--white-text);
     height: 20px;
@@ -551,7 +551,7 @@ textarea {
   }
 
   .caption h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .about{
