@@ -10,6 +10,7 @@ $(function () {
   });
 });
 
+
 // contact form -> send message and display thank you alert
 var message = "";
 
@@ -25,9 +26,48 @@ $("#sendMessage").on("click", function() {
     return false;
 });
 
-// adding smooth scrolling - as it is not supported by Safari
+// --- typewriter effect for about section
+// --- called in document.ready()
+let totalCount = 0;
+
+function typeText(fldName) {
+  let content = $(fldName).text();
+  $(fldName).text('');
+
+  var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+  $(ele).hide().appendTo(fldName).each(function (i) {
+    $(this).delay(100 * totalCount).css({
+      display: 'inline',
+      opacity: 0
+    }).animate({
+      opacity: 1
+    }, 100);
+    totalCount++;
+  });
+};
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
+
+  // ---typewriter effect for about section
+  // ---animate in loop
+  function looping() {
+    typeText('#text1');
+    typeText('#text2');
+    typeText('#text3');
+    typeText('#text4');
+    typeText('#text5');
+    typeText('#text6');
+    setTimeout(function(){
+      looping();
+    }, 40000);
+    // reset totalCount before next loop
+    totalCount = 0;
+  }
+  looping();
+
+
+  // ----Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -66,5 +106,3 @@ $(document).ready(function(){
   });
 
 });
-
-// End of adding smooth scrolling - as it is not supported by Safari

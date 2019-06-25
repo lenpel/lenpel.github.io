@@ -151,17 +151,17 @@ html{
 }
 
 #about {
-  background-color: var(--pink-background);
+  background-color: var(--light-grey);
   min-height: 100%;
 }
 
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  width: 80%;
+  font-family: 'Consolas', 'Courier New', monospace;
 }
 
 .body{
@@ -316,13 +316,6 @@ html{
     color: var(--pink-text);
 }
 
-.about-info {
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-/*   max-width: 90%; */
-}
-
 #contact.anchor{
   padding-bottom: 1rem;
 }
@@ -372,52 +365,6 @@ textarea {
   margin-top: 4rem;
 }
 
-/* about - */
-#flip {
-  height:6rem;
-  font-size: 3rem;
-  overflow:hidden;
-}
-
-#flip > div > div {
-  color:#fff;
-  padding:1.2rem;
-  height:5.2rem;
-  margin-bottom:5.2rem;
-  display:inline-block;
-}
-
-#flip div:first-child {
-  animation: show 5s linear infinite;
-}
-
-/* #flip div div { */
-#flip div:nth-child(odd) div {
-  background:#42c58a;
-}
-/* #flip div:first-child div { */
-#flip div:nth-child(even) div {
-  background:#4ec7f3;
-}
-
-/* #flip div:last-child div {
-  background:#DC143C;
-} */
-
-@keyframes show {
-  0% {margin-top:-270px;}
-/*   5% {margin-top:-180px;} */
-  25% {margin-top:-180px;}
-/*  38% {margin-top:-90px;} */
-  50% {margin-top:-90px;}
-/*  71% {margin-top:0px;}
-  80% {margin-top:0px;}
-  90% {margin-top:0px;} */
-  75% {margin-top:0px;}
-    99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
-
-}
 .caption h2{
   color: var(--white-text) !important;
   margin-top: 3rem;
@@ -521,9 +468,13 @@ textarea {
     /* max-width: 40%; */
   }
 
-  .caption h1, h2.border, .about-info {
+  .caption h1, h2.border, .about {
 	  width: 80%;
     max-width: 900px;
+  }
+
+  .about{
+    font-size: 2.5rem;
   }
 }
 
@@ -540,9 +491,13 @@ textarea {
 /*     max-width: 90%; */
   }
 
-  .caption h1, h2.border, .about-info {
+  .caption h1, h2.border, .about {
 	  width: 90%;
     max-width: 600px;
+  }
+
+  .about{
+    font-size: 1.8rem;
   }
 
   .caption h1{
@@ -552,9 +507,5 @@ textarea {
 
   .caption h2 {
     font-size: 2rem;
-  }
-
-  .about{
-    width: 100%;
   }
 }
