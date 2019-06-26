@@ -17,7 +17,7 @@
     --black-text: #1D1D1D;
     --light-blue: #6E9BBE;
     --light-grey: #F8F8F8;
-    --light-orange: #DD9370;
+    --dark-grey: #222222;
 }
 
 /* change the text selection color */
@@ -42,7 +42,7 @@ h1, h2, .project-tile-title{ /* heading */
 }
 
 h2.center {
-  font-size: 3.6rem !important;
+  font-size: 3.2rem !important;
 }
 
 h2, a:hover{
@@ -152,15 +152,20 @@ html{
 
 #about {
   background-color: var(--light-grey);
+  color: var(--black-text);
   min-height: 100%;
 }
 
 .about {
   display: flex;
+  padding-top: 2rem;
   justify-content: left;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+}
+
+.about span {
   font-family: 'Consolas', 'Courier New', monospace;
 }
 
@@ -242,7 +247,7 @@ html{
 }
 
 .project-tile-back p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: left;
   padding-right: 20px;
   padding-left: 20px;
@@ -330,7 +335,7 @@ form#contactform {
 
 section.contact {
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
     background: var(--light-grey);
     min-height: 100vh;
@@ -470,10 +475,11 @@ textarea {
 
   .caption h1, h2.border, .about {
 	  width: 80%;
-    max-width: 900px;
+    max-width: 850px;
   }
 
   .about{
+    padding-top: 3rem;
     font-size: 2.5rem;
   }
 }
@@ -489,6 +495,10 @@ textarea {
   .project-tile {
     margin: 3.85rem 0;
 /*     max-width: 90%; */
+  }
+
+  .project-tile-back p {
+    font-size: 1.5rem;
   }
 
   .caption h1, h2.border, .about {
