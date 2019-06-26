@@ -57,7 +57,6 @@ $(document).ready(function(){
     typeText('#text3');
     typeText('#text4');
     typeText('#text5');
-    typeText('#text6');
     setTimeout(function(){
       looping();
     }, 40000);
