@@ -17,7 +17,7 @@
     --black-text: #1D1D1D;
     --light-blue: #6E9BBE;
     --light-grey: #F8F8F8;
-    --dark-grey: #222222;
+    --dark-grey: #1D1E22;
 }
 
 /* change the text selection color */
@@ -151,7 +151,7 @@ html{
 }
 
 #about {
-  background-color: var(--light-grey);
+  background-color: var(--dark-grey);
   color: var(--black-text);
   min-height: 100%;
 }
@@ -348,6 +348,19 @@ section.contact {
   width: 100%;
   background-color: transparent;
   padding: 2rem 0;
+}
+
+/* most browsers use grey color for placeholder, I want pink*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--pink-text);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--pink-text);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--pink-text);
 }
 
 textarea {

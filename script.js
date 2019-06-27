@@ -28,6 +28,60 @@ $("#sendMessage").on("click", function() {
 
 // --- typewriter effect for about section
 // --- called in document.ready()
+// --- adding different code colors
+
+function getColor(fldName, i, character) {
+  const codeColor = {
+    codeGreen: '#96B382',
+    codeWhite: '#fff',
+    codeYellow: '#D0B95F',
+    codeBlue: '#759BBC',
+    codePurple: '#807591'
+  }
+  let newColor = codeColor.codeGreen;
+  const tempString = "=;.{}:";
+  if (tempString.includes(character)) {
+    newColor = codeColor.codeWhite;
+    return newColor;
+  };
+  if (i<5 && fldName != '#text1'){
+    newColor = codeColor.codeYellow;
+    return newColor;
+  }
+  switch (fldName) {
+    case "#text1":
+      if (i<3) {
+        newColor = codeColor.codeYellow;
+      } else if (i<9){
+        newColor = codeColor.codeBlue;
+      } else if ((i>12 && i<22) || (i>31 && i<40)){
+        newColor = codeColor.codePurple;
+      }
+      break;
+    case "#text2":
+      if (i<8) {
+        newColor = codeColor.codePurple;
+      }
+      break;
+    case "#text3":
+      if (i<12) {
+        newColor = codeColor.codePurple;
+      }
+      break;
+    case "#text4":
+      if (i<11) {
+        newColor = codeColor.codePurple;
+      }
+      break;
+    case "#text5":
+      if (i<15) {
+        newColor = codeColor.codePurple;
+      }
+      break;
+  }
+  return newColor;
+}
+
 let totalCount = 0;
 
 function typeText(fldName) {
@@ -35,9 +89,13 @@ function typeText(fldName) {
   $(fldName).text('');
 
   var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
+  var eleColor = 'white';
   $(ele).hide().appendTo(fldName).each(function (i) {
+
+    eleColor = getColor(fldName, i, this.innerHTML);
+
     $(this).delay(100 * totalCount).css({
+      color: eleColor,
       display: 'inline',
       opacity: 0
     }).animate({
