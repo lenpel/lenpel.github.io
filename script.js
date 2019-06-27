@@ -6,7 +6,8 @@ $('.navbar-collapse ul li a').click(function(){
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    var blackHeight = $(".img-container").height() + $("#about").height();
+    $nav.toggleClass('scrolled', $(this).scrollTop() > blackHeight); //$nav.height());
   });
 });
 
