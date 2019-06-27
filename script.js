@@ -118,7 +118,7 @@ $(document).ready(function(){
     typeText('#text5');
     setTimeout(function(){
       looping();
-    }, 40000);
+    }, 30000);
     // reset totalCount before next loop
     totalCount = 0;
   }
