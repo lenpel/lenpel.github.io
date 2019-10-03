@@ -95,7 +95,7 @@ function typeText(fldName) {
 
     eleColor = getColor(fldName, i, this.innerHTML);
 
-    $(this).delay(100 * totalCount).css({
+    $(this).delay(40 * totalCount).css({
       color: eleColor,
       display: 'inline',
       opacity: 0
